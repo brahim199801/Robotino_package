@@ -1,0 +1,14 @@
+<launch>
+  <node name="slam_gmapping" pkg="gmapping" type="slam_gmapping" output="screen">
+    <param name="xmin" value="-10" />
+    <param name="xmax" value="10" />
+    <param name="ymin" value="-10 />
+    <param name="ymax" value="10" />
+    <param name="delta" value="0.005" />
+  </node>
+
+  <!-- Run rviz 
+  <include file="$(find robotino_navigation)/launch/rviz.launch" />
+  -->
+
+</launch>
